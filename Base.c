@@ -18,7 +18,6 @@ void timecmp(void);
 
 int main(void)
 {
-	printf("%s\n","gazuaaaaaa" );
    filestat1();
    filestat2();
    filetime1();
