@@ -207,7 +207,15 @@ void sizecmp(void)
 
 }
 void blockcmp(void)
-{}
+{
+	long long int file1 = (long long)stat1.st_blocks;
+	long long int file2 = (long long)stat2.st_blocks;
+
+	if(fil1>file2) printf("text1 is bigger\n");
+	else if(file1<file2) printf("text2 is bigger\n");
+	else printf("same blocksize\n");
+
+}
 void datecmp(void)
 {}
 void timecmp(void)
